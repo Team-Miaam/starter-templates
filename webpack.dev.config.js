@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
 	mode: 'development',
 	target: 'web',
@@ -11,8 +13,12 @@ module.exports = {
 		],
 	},
 	entry: {
-		index: './index.js',
+		index: './src/index.js',
 	},
+	output: {
+		path: path.join(__dirname, 'public', 'js'),
+	},
+	watch: true,
 	watchOptions: {
 		ignored: '/node_modules/',
 	},

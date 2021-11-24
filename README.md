@@ -1,3 +1,3 @@
 # js-base-starter
 
-JS Starter for Miaam Projects
+Starter for JS Projects using webpack, eslint, babel
