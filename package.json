@@ -1,8 +1,7 @@
 {
-	"name": "miaam-ecs",
+	"name": "miaam-starter",
 	"version": "0.0.1",
-	"description": "ECS Framework by Miaam",
-	"main": "index.js",
+	"description": "Miaam Template Generator",
 	"scripts": {
 		"format": "prettier --write .",
 		"lint": "eslint .",
@@ -12,24 +11,13 @@
 		"test": "mocha || exit 0",
 		"doc": "jsdoc src -r -d docs"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Team-Miaam/miaam-ecs.git"
-	},
 	"keywords": [
-		"Entity",
-		"Component",
-		"System",
 		"Miaam",
 		"Web",
 		"JavaScript"
 	],
-	"author": "Noman5237",
+	"author": "Team Miaam Core",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Team-Miaam/miaam-ecs/issues"
-	},
-	"homepage": "https://github.com/Team-Miaam/miaam-ecs#readme",
 	"devDependencies": {
 		"@babel/core": "^7.16.0",
 		"@babel/eslint-parser": "^7.16.3",
