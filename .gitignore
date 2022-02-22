@@ -106,4 +106,4 @@ dist
 # Ignoring package-lock
 package-lock.json
 
-public/js/
+public/js
