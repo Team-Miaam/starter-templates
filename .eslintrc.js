@@ -7,7 +7,7 @@ module.exports = {
 	parserOptions: {
 		sourceType: 'module',
 		babelOptions: {
-			configFile: './.babelrc',
+			configFile: './node_modules/miaam-scripts/configs/babelrc.json',
 		},
 	},
 	plugins: ['@babel', 'import', 'prettier'],
