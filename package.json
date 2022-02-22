@@ -24,5 +24,8 @@
 		"husky": "^7.0.4",
 		"lint-staged": "^12.1.3",
 		"mocha": "^9.1.3"
+	},
+	"dependencies": {
+		"miaam-scripts": "^0.0.3"
 	}
 }
