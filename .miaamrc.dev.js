@@ -1,8 +1,7 @@
 module.exports = {
 	mode: 'development',
 	paths: {
-		public: './public',
-		assets: './public/asset',
+		assets: './assets',
 		src: './src',
 	},
 	index: './src/index.js',
