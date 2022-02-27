@@ -3,12 +3,14 @@ module.exports = {
 	paths: {
 		assets: './assets',
 		src: './src',
+		dist: './dist',
+		build: './build',
 	},
-	index: './src/index.js',
+	index: './src/index.mjs',
 	server: {
 		port: 3007,
 	},
 	watchOptions: {
-		ignored: '/node_modules/',
+		ignored: ['/node_modules/'],
 	},
 };

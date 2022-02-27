@@ -31,6 +31,6 @@
 		"prettier": "^2.4.1"
 	},
 	"dependencies": {
-		"miaam-scripts": "^0.2.0"
+		"miaam-scripts": "^0.2.9"
 	}
 }

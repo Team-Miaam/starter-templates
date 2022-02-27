@@ -16,5 +16,6 @@ module.exports = {
 		// printWidth rule in prettier is not working
 		'max-len': ['error', { code: 120, tabWidth: 2 }],
 		'import/extensions': ['error', 'always'],
+		'import/no-absolute-path': 0,
 	},
 };
