@@ -103,7 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-# Ignoring package-lock
+# Ignoring locks
 package-lock.json
+miaam-lock.json
 
 public/js
