@@ -2,7 +2,7 @@ import map from '../../assets/tilemap/IUTcampus.tilemap.json';
 
 console.log(map);
 
-const aloha = import('../hello.js');
+__createChunk__('../hello.js');
 
 class Two {}
 

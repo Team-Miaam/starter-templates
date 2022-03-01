@@ -18,4 +18,7 @@ module.exports = {
 		'import/extensions': ['error', 'always'],
 		'import/no-absolute-path': 0,
 	},
+	globals: {
+		__createChunk__: 'readonly',
+	},
 };

@@ -4,8 +4,7 @@ const a = [1, 2, 3];
 console.log([...a], '/assets/tilemap/endScene.tilemap.json');
 setTimeout(() => {
 	(async () => {
-		const { default: b } = await import('./two.scene.js');
-		console.log(b);
+		__createChunk__('./two.scene.js');
 	})();
 }, 2000);
 

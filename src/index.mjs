@@ -1,3 +1,2 @@
-const One = await import('./scenes/one.scene.js');
-console.log(One);
+__createChunk__('./scenes/onep.scene.js');
 console.log('hello world');
