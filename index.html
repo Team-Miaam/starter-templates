@@ -10,7 +10,25 @@
 
 <body>
 	<div id="root"></div>
-	<script src="./dist/index.js"></script>
+	<!-- LOADING MIAAM LOCK FILE FIRST -->
+	<script type="text/javascript" defer="true">
+		fetch('./miaam-lock.json')
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (data) {
+				window.__MIAAM__ = {
+					LOCK: data
+				}
+				console.log(window.__MIAAM__);
+				const indexScript = document.createElement('script');
+				indexScript.setAttribute('src', "./dist/index.js");
+				document.body.appendChild(indexScript);
+			})
+			.catch(function (err) {
+				console.log('error: ' + err);
+			});
+	</script>
 </body>
 
 </html>

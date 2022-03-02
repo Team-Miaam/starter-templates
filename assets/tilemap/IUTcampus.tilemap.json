@@ -426,7 +426,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/tilesets\/IUTcampusTileset.json"
+         "source":"..\/tilesets\/IUTcampus.tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

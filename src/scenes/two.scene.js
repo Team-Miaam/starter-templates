@@ -1,15 +1,14 @@
-import map from '../../assets/tilemap/IUTcampus.tilemap.json';
+// import map from '../../assets/tilemap/IUTcampus.tilemap.json';
 
-console.log(map);
-
-__createChunk__('../hello.js');
+// console.log(map);
 
 class Two {}
 
-console.log('hello from one', '/assets/animation/noman.tileanimation.json');
+console.log('hello ro one', '/assets/animation/noman.tileanimation.json');
 const a = [1, 2, 3];
 console.log([...a], '/assets/tilemap/Mosque.tilemap.json');
 
-console.log('Hello from two');
+console.log('Hello fro two');
+
 
 export default Two;

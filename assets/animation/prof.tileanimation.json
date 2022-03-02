@@ -23,7 +23,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/tilesets\/profStrip.json"
+         "source":"..\/tilesets\/profStrip.tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

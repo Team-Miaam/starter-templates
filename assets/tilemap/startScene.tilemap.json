@@ -23,7 +23,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/tilesets\/menuTileset.json"
+         "source":"..\/tilesets\/menu.tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

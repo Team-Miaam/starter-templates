@@ -107,7 +107,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/tilesets\/player.json"
+         "source":"..\/tilesets\/player.tileset.json"
         }],
  "tilewidth":32,
  "type":"map",

@@ -165,7 +165,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/tilesets\/interior16.json"
+         "source":"..\/tilesets\/interior16.tileset.json"
         }],
  "tilewidth":16,
  "type":"map",
