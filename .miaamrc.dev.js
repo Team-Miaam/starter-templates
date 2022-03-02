@@ -3,7 +3,7 @@ module.exports = {
 	paths: {
 		assets: './assets',
 		src: './src',
-		dist: './dist',
+		dist: './dist/',
 		build: './build',
 	},
 	index: './src/index.mjs',
