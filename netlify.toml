@@ -3,5 +3,6 @@
   for = "/*"
 
   [headers.values]
+    Content-Type = "text/html"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
