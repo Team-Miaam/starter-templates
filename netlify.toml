@@ -1,8 +1,7 @@
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
+  for = "/dist/*"
 
   [headers.values]
-    Content-Type = "text/html"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
