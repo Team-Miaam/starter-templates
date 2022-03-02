@@ -1,25 +1,31 @@
-import { GameManager, AssetsManager } from 'miaam';
-
-GameManager.instance.createApplication({
-	width: 512,
-	height: 512,
-	antialias: true,
-	backgroundAlpha: false,
-	resolution: 1,
-});
+import { AssetsManager } from 'miaam';
+import _ from './scenes.js';
 
 const { importChunk } = AssetsManager.instance;
 
-__createChunk__('./scenes/onep.scene.js');
+const sceneOneButton = document.getElementById('one');
+const sceneTwoButton = document.getElementById('two');
 
-const one = 'onep';
+const progressBar = document.getElementById('progress');
 
-setTimeout(async () => {
-	const { default: One } = await importChunk({
-		source: `/src/scenes/${one}.scene.js`,
-		onProgress: (progress, resource) => console.log(`${progress}%`, resource.name),
+const loadScene = async (sceneId) => {
+	progressBar.style = `width:${0}%`;
+	progressBar.innerHTML = '';
+	const { default: Scene } = await importChunk({
+		source: `/src/scenes/${sceneId}.scene.js`,
+		onProgress: (progress, resource) => {
+			const roundedProgress = parseInt(progress, 10);
+			progressBar.style = `width:${roundedProgress}%`;
+			progressBar.innerHTML = `Loading ${resource.name} --- ${roundedProgress}%`;
+			console.log(`${progress}%`, resource.name);
+		},
 	});
-	console.log(new One());
-}, 2000);
 
-console.log('hello world');
+	progressBar.style = `width:${100}%`;
+	progressBar.innerHTML = 'Loading Complete';
+
+	new Scene();
+};
+
+sceneOneButton.onclick = () => loadScene('one');
+sceneTwoButton.onclick = () => loadScene('two');

@@ -1,14 +1,12 @@
-// import map from '../../assets/tilemap/IUTcampus.tilemap.json';
+class SceneTwo {
+	constructor() {
+		console.log('Created scene 2');
+	}
 
-// console.log(map);
+	start() {
+		this.map = '/assets/tilemap/IUTcampus.tilemap.json';
+		this.playerAnimation = '/assets/animation/akshar.tileanimation.json';
+	}
+}
 
-class Two {}
-
-console.log('hello ro one', '/assets/animation/noman.tileanimation.json');
-const a = [1, 2, 3];
-console.log([...a], '/assets/tilemap/Mosque.tilemap.json');
-
-console.log('Hello fro two');
-
-
-export default Two;
+export default SceneTwo;
