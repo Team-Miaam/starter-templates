@@ -1,2 +1,6 @@
-__createChunk__('./scenes/one.scene.js');
-__createChunk__('./scenes/two.scene.js');
+const scenes = {
+	one: __createChunk__('/src/scenes/one.scene.js'),
+	two: __createChunk__('/src/scenes/two.scene.js'),
+};
+
+export default scenes;

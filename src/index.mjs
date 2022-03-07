@@ -1,5 +1,5 @@
 import { AssetsManager } from 'miaam';
-import _ from './scenes.js';
+import scenes from './scenes.js';
 
 const { importChunk } = AssetsManager.instance;
 
@@ -12,7 +12,7 @@ const loadScene = async (sceneId) => {
 	progressBar.style = `width:${0}%`;
 	progressBar.innerHTML = '';
 	const { default: Scene } = await importChunk({
-		source: `/src/scenes/${sceneId}.scene.js`,
+		chunk: scenes[sceneId],
 		onProgress: (progress, resource) => {
 			const roundedProgress = parseInt(progress, 10);
 			progressBar.style = `width:${roundedProgress}%`;
